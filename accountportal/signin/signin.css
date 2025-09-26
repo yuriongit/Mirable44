@@ -7,20 +7,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Zalando Sans Expanded", sans-serif;
-    transition: all 1s cubic-bezier(0.2, 0.4, 0, 1.4);
 }
 /*ROOT*/
 
 /*BODY*/
 body{
-    background-image: url("background.png");
-    background-blend-mode:hue;
-    background-attachment:fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: rgba(0, 170, 37, 0.322);
 
+    background-color: rgb(20, 20, 20);
 }
 /*BODY*/
 /*---------------------------------------*/
@@ -34,26 +27,26 @@ body{
     color: rgb(21, 21, 22);
     margin: 20px auto;
     text-align: center;
-    background-color:   rgba(0, 145, 170, 0.514);
-    padding: 2.5vh;
+    align-items: center;
+    background-color:   rgba(75, 75, 75, 0.514);
+    padding: clamp(1vh, 1vh, 2vh);
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     border-radius: 10px;
-    width: 80%;
-
-
+    width: 95%;
 }
 /*NAVBAR HEADER*/
 
 /*NAVBAR LOGO*/
 .headersection a{
     font-weight: 800;
-    font-size: 20px;
+    font-size: clamp(13px, 1.6vw, 23px);
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
 .headersection a span{
-   color: rgb(0, 217, 255);
+   color: rgb(168, 168, 168);
 }
 /*NAVBAR LOGO*/
 
@@ -61,115 +54,104 @@ body{
 .headersection .navbar a{
     color: rgb(255, 255, 255);
     text-align: center;
+    align-items: center;
     font-weight: 100;
-    font-size: 15px;
+    font-size: clamp(10.5px, 1.2vw, 17px);
     border-radius: 14px;
-    margin: 15px;   
+    margin: clamp(5px, 1vh, 15px);   
 }
 /*NAVBAR TEXT*/
 /*---------------------------------------*/
 
 
 
-
-/*---------------------------------------*/
-/*LOGO*/
-.logo{
-    cursor: default;
-    text-align: center;
-    align-items: center;
-}
-.logo h1{
-    padding-top: 250px;
-    color: rgb(255, 255, 255);
-    font-size: 70px;
-    font-weight: 800;
-    text-align: center;
-}
-.logo h1 span{
-    color: rgb(0, 217, 255);
-}
-.logo h2, h3{
-    color: rgb(255, 255, 255);
-}
-.logo h3{
-    font-style: italic;
-    font-weight: 400;
-}
-/*LOGO*/
-
-/*LOGO BUTTON*/
-.logobutton{
-    margin: 8rem;
-    text-align: center;
-    align-items: center;
-    padding-bottom: 70px;
-}
-.logobutton a{
-    font-size: 19px;
-    background-color: rgba(0, 145, 170, 0.514);
-    font-weight: 100;
-    text-decoration: none;
-    color:   rgb(255, 255, 255);
-    text-align: center;
-    padding: 12px 30px;
-    border-radius: 8px;
-    border-width: 1px;
-}
-/*LOGO BUTTON*/
-/*---------------------------------------*/
-
-
-
-
-
-/*---------------------------------------*/
-/*CONVERSION TEXT*/
-.conversion{
-    padding-top: 100px;
-    margin-bottom: 150px;
-}
-.conversion main{
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content:flex-start;
-}
-.conversion main h1{
-    font-size: 21px;
+/*SIGN-IN*\
+/*--------------------------------------*/
+.signin{
+    padding: 10vh;
+    width: 50%;
+    margin: auto;
     color: white;
-    text-align: left;
-    display: flex;
-    justify-content: space-between;
-    margin: 50px;
 }
-.conversion main p{
-    color: white;
-    font-size: 19px;
-    text-align: left;
-}
-.conversion img{
-    width: 1300px;
-    align-items: center;
+.signin .signin-box{
     display: flex;
     justify-content: center;
-    padding: 40px 90px;
-    border-radius: 10px;
+    padding: 15vh 70px;
+    flex-direction: column;
+    background-color: rgba(75, 75, 75, 0.349);
+    border-radius: 12px;
 }
-/*CONVERSION TEXT*/
-/*---------------------------------------*/
+.signin .signin-box h1{
+    font-size: 30px;
+    font-weight: 100;
+    padding-bottom: 25px;
+}
+.signin .signin-box h1 span{
+    font-weight: 700;
+}
+.signin .signin-box h1 span span{
+    color: rgb(168, 168, 168);
+}
+
+.signin label{
+    font-size: 16px;
+    font-weight: 100;
+    text-align: left;
+    padding-top: 4vh;
+    padding-bottom: 8px;
+}
+
+.signin .signin-box input{
+    outline: none;
+    border: none;
+    text-align: center;
+    color: white;
+    background-color: rgb(66, 66, 66);
+    border-radius: 8px;
+    padding: 0.5vh 0;
+    width: 56%;
+    font-style: italic;
+}
+
+.signin .signin-box input placeholder{
+    color: white;
+}
+
+.signin .signin-box button{
+    outline: none;
+    border: none;
+    font-size: 16px;
+    margin-top: 80px;
+    align-items: center;
+    width: 25%;
+    padding: 0.7vh 0;
+    border-radius: 8px;
+    background-color: grey;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+
+}
+.signin .signin-box p{
+    font-size: 15px;
+    font-weight: 100;
+    padding-top: 30px;
+}
+
+.signin .signin-box p a{
+    color: grey;
+    font-size: 15.5px;
+    font-weight: 600;
+}
 
 
-
-
-/*---------------------------------------*/
 /*FOOTER*/
 .footer .bottomfooter{
     margin: auto;
     align-items: center;
     text-align: center;
-    background-color:   rgba(0, 145, 170, 0.514);
-    padding: 1rem;
+    background-color:   rgba(75, 75, 75, 0.514);
+    padding: 0.5rem;
     border-radius: 12px;
 
     width: 95%;    
@@ -189,7 +171,7 @@ body{
 .footer .bottomfooter{
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .footer .bottomfooter .list li{
     margin: 5px;
@@ -202,8 +184,9 @@ body{
     justify-content: center;
     display: flex;
 }
-/*FOOTER*/
-/*---------------------------------------*/
+
+
+
 
 
 
@@ -214,7 +197,7 @@ body{
 
 /*NAVBAR*/
 .headersection .navbar a{
-    transition: all 0.4s cubic-bezier(0.2, 0, 0, 1.4)
+    transition: all 0.4s cubic-bezier(0.2, 0, 0, 1.4);
 }
 .headersection{
     cursor: default;
@@ -227,27 +210,56 @@ body{
 .headersection .navbar a:active{
     font-size: 16.8px;
     font-weight: 700;
-    color: rgb(0, 217, 255);
+    color: rgb(168, 168, 168);
 }
 .headersection a:hover{
 cursor: default;
 }
 /*NAVBAR*/
 
-/*LOGOBUTTON*/
-.logobutton a{
-    transition: all 0.4s cubic-bezier(0.2, 0.4, 0, 1.4);
+/*signin*/
+.signin .signin-box input{
+    transition: all 0.25s cubic-bezier(0.2, 0, 0, 1.4);
 }
-.logobutton a:hover{
-    font-weight: 400;
+.signin .signin-box input:hover{
+    background-color: rgb(56, 56, 56);
+}
+.signin .signin-box input:active{
+    font-size: 13.8px;
+}
 
+.signin .signin-box button{
+    transition: all 0.4s cubic-bezier(0.2, 0, 0, 1.4);
 }
-.logobutton a:active{
-    color: rgb(0, 217, 255);
+.signin .signin-box button:hover{
+    cursor: pointer;
+    font-weight: 100;
+    background-color: rgb(78, 78, 78);
+}
+.signin .signin-box button:active{
+    font-size: 17px;
     font-weight: 700;
-    font-size: 20.88px;
 }
-/*LOGOBUTTON*/
+.signin .signin-box p a{
+    transition: all 0.4s cubic-bezier(0.2, 0, 0, 1.4);
+}
+.signin .signin-box p a:hover{
+    font-size: 15.8px;
+}
+.signin .signin-box p a:active{
+    font-size: 16.35px;
+}
+
+.signin .signin-box h1:hover{
+    cursor: default;
+}
+
+.signin .signin-box p:hover{
+    cursor: default;
+}
+.signin .signin-box p span:hover{
+    cursor: pointer;
+}
 
 /*FOOTER*/
 .footer .bottomfooter .list li span{
@@ -262,13 +274,15 @@ cursor: default;
     font-size: 13.96px;
 }
 .footer .bottomfooter .list li a:active{
-    font-size: 15.8px;
+    font-size: 14.5px;
     font-weight: 700;
-    color: rgb(0, 217, 255);
+    color: rgb(168, 168, 168);
 }
 
 .conversion main  h1, p:hover{
     cursor: default;
 }
 /*FOOTER*/
+
+/*ANIMATIONS*/
 /*---------------------------------------*/

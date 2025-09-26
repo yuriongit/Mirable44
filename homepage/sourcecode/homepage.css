@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
+
+/*---------------------------------------*/
+/*ROOT*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Zalando Sans Expanded", sans-serif;
+}
+/*ROOT*/
+
+/*BODY*/
+body{
+
+    background-color: rgb(20, 20, 20);
+}
+/*BODY*/
+/*---------------------------------------*/
+
+
+
+
+/*---------------------------------------*/
+/*NAVBAR HEADER*/
+.headersection{
+    color: rgb(21, 21, 22);
+    margin: 20px auto;
+    text-align: center;
+    align-items: center;
+    background-color:   rgba(75, 75, 75, 0.514);
+    padding: clamp(1vh, 1vh, 2vh);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-radius: 10px;
+    width: 95%;
+}
+/*NAVBAR HEADER*/
+
+/*NAVBAR LOGO*/
+.headersection a{
+    font-weight: 800;
+    font-size: clamp(13px, 1.6vw, 23px);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.headersection a span{
+   color: rgb(168, 168, 168);
+}
+/*NAVBAR LOGO*/
+
+/*NAVBAR TEXT*/
+.headersection .navbar a{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    align-items: center;
+    font-weight: 100;
+    font-size: clamp(10.5px, 1.2vw, 17px);
+    border-radius: 14px;
+    margin: clamp(5px, 1vh, 15px);   
+}
+/*NAVBAR TEXT*/
+/*---------------------------------------*/
+
+
+
+
+/*---------------------------------------*/
+/*LOGO*/
+.logo{
+    cursor: default;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    padding-top: 220px;
+}
+.logo h1{
+    color: rgb(255, 255, 255);
+    font-size: clamp(50px, 5vw, 80px);
+    font-weight: 800;
+    text-align: center;
+}
+.logo h1 span{
+    font-size: clamp(50px, 5vw, 80px);
+    color: rgb(168, 168, 168);
+}
+.logo h2, h3{
+    font-size: clamp(17px, 2vw, 25px);
+    color: rgb(255, 255, 255);
+}
+.logo h3{
+    font-size: clamp(13px, 1.5vw, 22px);
+    font-style: italic;
+    font-weight: 400;
+}
+/*LOGO*/
+
+/*LOGO BUTTON*/
+.logobutton{
+    margin: 8rem;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 70px;
+}
+.logobutton a{
+    font-size: clamp(12px, 1.3vw, 19px);
+    background-color: rgba(75, 75, 75, 0.514);
+    font-weight: 100;
+    text-decoration: none;
+    color:   rgb(255, 255, 255);
+    text-align: center;
+    padding: 12px 30px;
+    border-radius: 8px;
+    border-width: 1px;
+}
+/*LOGO BUTTON*/
+/*---------------------------------------*/
+
+
+
+
+
+/*---------------------------------------*/
+/*CONVERSION TEXT*/
+.conversion{
+    padding-top: 100px;
+    margin-bottom: 150px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-direction:row;
+}
+.conversion main{
+
+}
+.conversion main h1{
+    font-size: clamp(16px, 1.35vw, 24px);
+    color: white;
+    text-align: left;
+    padding: clamp(45px, 1.7vw, 50px);
+    margin: auto;
+}
+.conversion main p{
+    word-break: break-all;
+    word-wrap: break-word;
+    padding: clamp(45px, 1.7vw, 50px);
+    color: rgb(255, 255, 255);
+    font-size: clamp(13px, 1.2vw, 21px);
+    text-align: left;
+}
+.conversion img{
+    width: clamp(900px, 50vw, 1900px);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: clamp(45px, 1.7vw, 50px);
+    border-radius: 10px;
+}
+/*CONVERSION TEXT*/
+/*---------------------------------------*/
+
+
+
+
+/*---------------------------------------*/
+/*FOOTER*/
+.footer .bottomfooter{
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    background-color:   rgba(75, 75, 75, 0.514);
+    padding: 0.5rem;
+    border-radius: 12px;
+
+    width: 95%;    
+}
+.footer .bottomfooter .list li{
+    list-style-type: none;
+}
+.footer .bottomfooter .list a{
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 13.5px;
+    margin: 8px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    text-align: center;
+}
+.footer .bottomfooter{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .bottomfooter .list li{
+    margin: 5px;
+}
+.footer .bottomfooter .list{
+    color: aliceblue;
+    font-weight: 700;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+/*FOOTER*/
+/*---------------------------------------*/
+
+
+
+
+
+/*---------------------------------------*/
+/*ANIMATIONS*/
+
+/*NAVBAR*/
+.headersection .navbar a{
+    transition: all 0.4s cubic-bezier(0.2, 0, 0, 1.4)
+}
+.headersection{
+    cursor: default;
+}
+.headersection .navbar a:hover{
+    cursor:pointer;
+    font-weight: 400;
+    font-size: 15.5px;
+}
+.headersection .navbar a:active{
+    font-size: 16.8px;
+    font-weight: 700;
+    color: rgb(168, 168, 168);
+}
+.headersection a:hover{
+cursor: default;
+}
+/*NAVBAR*/
+
+/*LOGOBUTTON*/
+.logobutton a{
+    transition: all 0.4s cubic-bezier(0.2, 0.4, 0, 1.4);
+}
+.logobutton a:hover{
+    font-weight: 400;
+
+}
+.logobutton a:active{
+    color: rgb(168, 168, 168);
+    font-weight: 700;
+    font-size: 20.88px;
+}
+/*LOGOBUTTON*/
+
+/*FOOTER*/
+.footer .bottomfooter .list li span{
+    cursor: default;
+}
+.footer .bottomfooter .list li a{
+    transition: all 0.4s cubic-bezier(0.2, 0, 0, 1.4)
+}
+.footer .bottomfooter .list li a:hover{
+    cursor:pointer;
+    font-weight: 400;
+    font-size: 13.96px;
+}
+.footer .bottomfooter .list li a:active{
+    font-size: 14.5px;
+    font-weight: 700;
+    color: rgb(168, 168, 168);
+}
+
+.conversion main  h1, p:hover{
+    cursor: default;
+}
+/*FOOTER*/
+/*---------------------------------------*/
