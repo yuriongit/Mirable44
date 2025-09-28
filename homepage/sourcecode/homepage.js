@@ -1,0 +1,1 @@
+console.log("hey i dont know how and why to use javascript");

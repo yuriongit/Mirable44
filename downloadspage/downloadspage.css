@@ -65,84 +65,141 @@ body{
 
 
 
-/*SIGN-IN*\
+/*DOWNLOADS*\
 /*--------------------------------------*/
-.signin{
-    padding: 10vh;
-    width: 50%;
-    margin: auto;
-    color: white;
-}
-.signin .signin-box{
+.downloads{
     display: flex;
-    justify-content: center;
-    padding: 15vh 70px;
-    flex-direction: column;
+    padding: 0 100px;
+}
+.downloads .downloadsbox{
+    color: white;
     background-color: rgba(75, 75, 75, 0.349);
     border-radius: 12px;
+    padding: 5vh 1vh;
+    margin: auto;
+    width: 55%;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    text-align: left;
 }
-.signin .signin-box h1{
-    font-size: 35px;
-    font-weight: 100;
-    padding-bottom: 25px;
-}
-.signin .signin-box h1 span{
-    font-weight: 700;
-}
-.signin .signin-box h1 span span{
-    color: rgb(168, 168, 168);
-}
-
-.signin label{
-    font-size: 16px;
+.downloads .downloadsbox h1{
     font-weight: 100;
     text-align: left;
-    padding-top: 4vh;
-    padding-bottom: 8px;
+    padding: 5vh 5vh;
+    font-size: 35px;
+    margin-top: 21.5px;
 }
-
-.signin .signin-box input{
-    outline: none;
-    border: none;
-    text-align: center;
-    color: white;
-    background-color: rgb(66, 66, 66);
-    border-radius: 8px;
-    padding: 0.5vh 0;
-    width: 56%;
-    font-style: italic;
+.downloads .downloadsbox h1 span{
+    font-weight: 700;
 }
-
-.signin .signin-box input placeholder{
-    color: white;
-}
-
-.signin .signin-box button{
-    outline: none;
-    border: none;
-    font-size: 16px;
-    margin-top: 80px;
+.downloads .downloadsbox h1 .icon{
     align-items: center;
-    width: 25%;
-    padding: 0.7vh 0;
-    border-radius: 8px;
-    background-color: grey;
-    color: white;
-    font-weight: 600;
-    font-size: 16px;
+}
+.downloads .downloadsbox h1 .icon i{
+    padding: 1vh 0;
 
 }
-.signin .signin-box p{
-    font-size: 15px;
+
+.downloads .downloadsbox h1 .span2{
+    color: rgb(168, 168, 168);
+}
+.downloads .downloadsbox h2{
+    display: flex;
+    padding: 0 5vh;
+    font-weight: 300;
+    font-size: 25px;
+}
+.downloads .downloadsbox .windows{
+    margin-bottom: 15px;
+    padding: 2vh 3vh;
+}
+.downloads .downloadsbox .macos{
+    padding: 2vh 3vh;
+    margin-bottom: 15px;
+}
+.downloads .downloadsbox .linux{
+    padding: 2vh 3vh;
+    margin-bottom: 15px;
+}
+.downloads .downloadsbox li{
+    list-style-type: none;
+    padding: 0.8vh 2vh;
+}
+
+.downloads .downloadsbox li a{
     font-weight: 100;
-    padding-top: 30px;
+    font-size: 19px;
+    color: grey;
+}
+/*DOWNLOADS*\
+/*--------------------------------------*/
+
+
+
+.downloads .setupbox{
+    color: white;
+    background-color: rgba(75, 75, 75, 0.349);
+    border-radius: 12px;
+    padding: 5vh 1vh;
+    margin: auto;
+    width: 38%;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    text-align: left;
+}
+.downloads .setupbox h1{
+    font-weight: 100;
+    text-align: left;
+    padding: 6.8vh 5vh;
+    font-size: 35px;
+}
+.downloads .setupbox h1 span{
+    font-weight: 700;
+}
+.downloads .setupbox h1 .span2{
+    color: rgb(168, 168, 168);
+}
+.downloads .setupbox h2{
+    padding: 0 5vh;
+    font-weight: 300;
+    font-size: 25px;
+}
+.downloads .setupbox .windows{
+    margin-bottom: 15px;
+    padding: 2vh 3vh;
+    font-weight: 100;
+    font-size: 17px;
+}
+.downloads .setupbox .macos{
+    padding: 2vh 3vh;
+    margin-bottom: 15px;
+    font-weight: 100;
+    font-size: 17px;
+}
+.downloads .setupbox .linux{
+    padding: 2vh 3vh;
+    margin-bottom: 15px;
+    font-weight: 100;
+    font-size: 17px;
+}
+.downloads .setupbox li{
+    list-style-type: none;
+    padding: 0.8vh 2vh;
+    font-weight: 100;
+    font-size: 17px;
 }
 
-.signin .signin-box p a{
+.downloads .setupbox li a{
+    font-weight: 100;
+    font-size: 19px;
     color: grey;
-    font-size: 15.5px;
-    font-weight: 600;
+    font-weight: 100;
+    font-size: 17px;
 }
+
+
+
+
 
 
 /*FOOTER*/
@@ -286,3 +343,4 @@ cursor: default;
 
 /*ANIMATIONS*/
 /*---------------------------------------*/
+
